@@ -1,54 +1,54 @@
 export class TestePh {
-    private valorPh: number = 0;
-    private horaTeste: number = 0;
-    private minutoTeste: number = 0;
-    private nomeProduto: string = "";
+    private _valorPh: number = 0;
+    private _horaTeste: number = 0;
+    private _minutoTeste: number = 0;
+    private _nomeProduto: string = "";
 
     constructor(nomeProduto: string, valorPh: number, horaTeste: number, minutoTeste: number) {
-        this.nomeProduto = nomeProduto;
-        this.valorPh = valorPh;
-        this.minutoTeste = minutoTeste;
-        this.horaTeste = horaTeste
+        this._nomeProduto = nomeProduto;
+        this._valorPh = valorPh;
+        this._minutoTeste = minutoTeste;
+        this._horaTeste = horaTeste
 
     }
 
 
-    public get getNomeProduto(): string {
-        return this.nomeProduto;
+    public get nomeProduto(): string {
+        return this._nomeProduto;
     }
 
-    public set setNomeProduto(nomeProduto: string) {
-        this.nomeProduto = nomeProduto;
+    public set nomeProduto(nomeProduto: string) {
+        this._nomeProduto = nomeProduto;
     }
 
-    public get getValorPh(): number {
-        return this.valorPh
+    public get valorPh(): number {
+        return this._valorPh
     }
 
-    public set setValorPh(valorPh: number) {
-        this.valorPh = valorPh;
-    }
-
-
-    public get getMinutoTeste(): number {
-        return this.minutoTeste;
-    }
-
-    public set setMinutoTeste(minutoTeste: number) {
-        this.minutoTeste = minutoTeste;
+    public set valorPh(valorPh: number) {
+        this._valorPh = valorPh;
     }
 
 
-    public get getHoraTeste(): number {
-        return this.horaTeste;
+    public get minutoTeste(): number {
+        return this._minutoTeste;
     }
 
-    public set setHoraTeste(horaTeste: number) {
-        this.horaTeste = horaTeste;
+    public set minutoTeste(minutoTeste: number) {
+        this._minutoTeste = minutoTeste;
+    }
+
+
+    public get horaTeste(): number {
+        return this._horaTeste;
+    }
+
+    public set horaTeste(horaTeste: number) {
+        this._horaTeste = horaTeste;
     }
 
     retornaAcidez() {
-        if(this.getValorPh >= 8){
+        if(this._valorPh >= 8){
             return "Ph Alcalino";
         }else if(this.valorPh <= 6.99){
             return "Ph Acido"
