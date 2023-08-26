@@ -45,6 +45,15 @@ export class AtividadeAgua{
         this._horarioAnalise = horarioAnalise;
     }
     
+    verificaAwRange(valorAw:number){
+        if(valorAw <= 600){
+            return "Valor AW está abaixo do padrão, produto muito seco."
+        }else if(valorAw >= 670){
+            return "Valor AW está acima do padrão, produto muito úmido"
+        }else{
+            return "Produto dento de valores padrões."
+        }
+    }
     
     
     
