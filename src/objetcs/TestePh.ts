@@ -25,7 +25,7 @@ export class TestePh {
         return this._valorPh
     }
 
-    public set valorPh(valorPh: number) {
+    private set valorPh(valorPh: number) {
         this._valorPh = valorPh;
     }
 
@@ -47,7 +47,7 @@ export class TestePh {
         this._horaTeste = horaTeste;
     }
 
-    retornaAcidez() {
+    retornaAcidez() : string {
         if(this._valorPh >= 8){
             return "Ph Alcalino";
         }else if(this.valorPh <= 6.99){
@@ -56,6 +56,7 @@ export class TestePh {
             return "Ph Neutro"
         }
     }
+
 
 
 }
