@@ -1,8 +1,17 @@
 {
-  "devDependencies": {
-    "typescript": "^5.1.6"
-  },
-  "dependencies": {
-    "node": "^20.5.1"
-  }
+   "devDependencies": {
+      "typescript": "4.5.2",
+      "ts-node": "10.7.0",
+      "@types/node": "^16.11.10"
+   },
+   "dependencies": {
+      "node": "^20.5.1",
+      "typeorm": "0.3.17",
+      "reflect-metadata": "^0.1.13",
+      "pg": "^8.4.0"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "typeorm": "typeorm-ts-node-commonjs"
+   }
 }
